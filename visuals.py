@@ -11,9 +11,12 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 
 import matplotlib.pyplot as pl
 import numpy as np
-from sklearn.model_selection import learning_curve, validation_curve
+#from sklearn.model_selection import learning_curve, validation_curve
+from sklearn.learning_curve import learning_curve, validation_curve
+
+
 from sklearn.tree import DecisionTreeRegressor
-from sklearn.model_selection import ShuffleSplit, train_test_split
+from sklearn.cross_validation import ShuffleSplit, train_test_split
 
 
 def ModelLearning(X, y):
